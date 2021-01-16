@@ -2,51 +2,42 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
-  // We'll go into the Hooks API later, for now, we are just using some code
-  // from the react-router docs (https://reacttraining.com/react-router/web/api/Hooks/uselocation)
-  // This allows the component to check the route any time the user uses a link to navigate.
+  
   const location = useLocation();
 
   return (
-    <ul className="nav nav-tabs">
+    <div className="sidenav">
+    <h5 className="myName ml-1">Sergey Lugovoy</h5>
       <li className="nav-item">
-        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-          Home
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/about"
-          className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
-        >
+        <Link to="/" className={location.pathname === "/"}>
           About
         </Link>
       </li>
-      <li className="nav-item">
+      <li className="nav-item mr-1">
         <Link
-          to="/blog"
-          className={location.pathname === "/blog" ? "nav-link active" : "nav-link"}
+          to="/portfolio"
+          className={location.pathname === "/portfolio"}
         >
-          Blog
+          Portfolio
         </Link>
       </li>
       <li className="nav-item">
         <Link
           to="/contact"
-          className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
+          className={location.pathname === "/contact"}
         >
-          Contact
+          Education
         </Link>
       </li>
-      <li className="nav-item">
+      <li className="nav-item mr-1">
         <Link
-          to="/contact/learn"
-          className={location.pathname === "/contact/learn" ? "nav-link active" : "nav-link"}
+          to="/experience"
+          className={location.pathname === "/experience"}
         >
-          Learn
+          Experience
         </Link>
       </li>
-    </ul>
+    </div>
   );
 }
 

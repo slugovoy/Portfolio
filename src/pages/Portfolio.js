@@ -1,9 +1,10 @@
 import React from 'react'
+import Project from "../components/Project/Project"
 
-function Portfolio() {
+function Portfolio({user}) {
     return (
-        <div>
-            
+        <div className="mainAbout">
+       <Project user={user}/>
         </div>
     )
 }
