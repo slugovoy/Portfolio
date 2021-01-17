@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Grid } from "@material-ui/core";
 
-function Education({user}) {
-  
-    return (
-        <div className="mainAbout" user={user}>
+function Education({ user }) {
+  return (
+    <div className="mainEducation" user={user}>
       <div>
-        <h4>Education</h4>
-        <ul>
+        <h2 className="title">Education</h2>
+        <div className="portfolioCards">
           {user.education.map((education, i) => (
-            <li key={i}>
-              <h6>{education.institution}</h6>
+            <Grid item className="projectCard" md={12} key={i}>
+              <h3 className="projectName">{education.institution}</h3>
               <div>
                 <h6>
                   {education.studyType}, {education.area}
@@ -19,15 +19,13 @@ function Education({user}) {
                   {education.start.year} to {education.end.year}
                 </span>
               </div>
-              <p>
-                {education.description.replace("\n\n", "\n")}
-              </p>
-            </li>
+              <p>{education.description.replace("\n\n", "\n")}</p>
+            </Grid>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
-    )
+  );
 }
 
-export default Education
+export default Education;

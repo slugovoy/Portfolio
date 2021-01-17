@@ -1,26 +1,27 @@
 import React from 'react'
+import { Grid } from "@material-ui/core";
 
 function Experience({user}) {
 
     return (
-        <div className="mainAbout" user={user}>
+        <div className="mainExperience" user={user}>
         <div>
-          <h4>Work</h4>
-          <ul>
+          <h2 className="title">Work Experience</h2>
+          <div className="portfolioCards">
             {user.work.map((work, i) => (
-              <li key={i}>
-                <h5>{work.position}</h5>
+              <Grid item className="projectCard" md={12} key={i}>
+              <h3 className="projectName">{work.position}</h3>
                 <div>
-                  <h6>{work.company}</h6> <span>{work.location}</span>
+                  <h5>{work.company}</h5> <span>{work.location}</span>
                   <span> &sdot; </span>
                   <span>
                     {work.start.year} to {work.end.year}
                   </span>
                 </div>
                 <p>{work.summary}</p>
-              </li>
+              </Grid>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     )

@@ -148,17 +148,45 @@ code {
   text-align: center;
   font-weight: 800;
 }
-.portfolioCards{
-  display: inline-block;
-}
 .projectCard{
-  flex: 50%
+  background-color: rgba(255, 255, 255, 0.26);
+  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  border-radius: 8px;
+} 
+.projectName{
+  padding: 0.8rem 0;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .projectCard {
     width: 100%;
   }
+}
+.projectName{
+  margin-top: 1rem;
+}
+/* Education component styles */
+
+.mainEducation{
+  color: white;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  margin-left: 15%;
+  padding: 8px;
+}
+/* Experience component styles */
+.mainExperience{
+  color: white;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  margin-left: 15%;
+  padding: 8px;
+}
+span{
+  font-size: 1.2rem;
 }
 /* Footer styles */
 .footer {
