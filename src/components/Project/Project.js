@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function Project({user}) {
-    return (
-        
-            <div user={user}>
+function Project({ user }) {
+  return (
+    <div className="mainProject" user={user}>
       <div>
-        <h4>Projects</h4>
-        <ul>
+        <h2 className="title">Projects</h2>
+        <div className="portfolioCards">
           {user.projects.map((project, i) => (
-            <h4 key={i}>
-              <h5>{project.name}</h5>
+            <div className="projectCard" key={i}>
+              <h3>{project.name}</h3>
               <img
                 src={project.images[0].resolutions.thumbnail.url}
                 alt="Project Demo"
@@ -26,13 +25,12 @@ function Project({user}) {
                   Github Repo
                 </a>
               </div>
-            </h4>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
-        
-    )
+  );
 }
 
-export default Project
+export default Project;

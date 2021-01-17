@@ -6,11 +6,11 @@ function About({user}) {
       <div className="block">
       <p className="aboutMe">
       <img className="myImage" src={user.basics.image} alt="My profile" />
-        <h3 className="aboutMe">About Me</h3>
+        <p className="aboutMe">About Me</p>
         {user.basics.summary}
         </p>
       </div>
-      <div>
+      <div className="mainSkills">
         <h4 className="aboutMeH4 ml-2">Skills</h4>
         <div className="skillsDiv">
           {user.skills.map((skill) => (
