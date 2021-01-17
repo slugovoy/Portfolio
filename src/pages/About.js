@@ -6,7 +6,7 @@ function About({user}) {
       <div className="block">
       <p className="aboutMe">
       <img className="myImage" src={user.basics.image} alt="My profile" />
-        <span className="aboutMeSmall">About Me</span>
+        <span className="aboutMeH4">About Me</span><br/>
         {user.basics.summary}
         </p>
       </div>
