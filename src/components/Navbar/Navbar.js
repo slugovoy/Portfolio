@@ -17,22 +17,22 @@ function Navbar({ user }) {
       <h5 className="myName">Sergey Lugovoy</h5>
       <p className="myNameP">Full Stack Developer</p>
       <li className="nav-item">
-        <Link to="/" className={+location.pathname === "/"}>
+        <Link to="/" className={`location.pathname === "/"`}>
           About
         </Link>
       </li>
       <li className="nav-item mr-1">
-        <Link to="/portfolio" className={+location.pathname === "/portfolio"}>
+        <Link to="/portfolio" className={`location.pathname === "/portfolio"`}>
           Portfolio
         </Link>
       </li>
       <li className="nav-item">
-        <Link to="/education" className={+location.pathname === "/education"}>
+        <Link to="/education" className={`location.pathname === "/education"`}>
           Education
         </Link>
       </li>
       <li className="nav-item mr-1">
-        <Link to="/experience" className={+location.pathname === "/experience"}>
+        <Link to="/experience" className={`location.pathname === "/experience"`}>
           Experience
         </Link>
       </li>

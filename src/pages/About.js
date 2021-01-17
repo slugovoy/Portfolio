@@ -6,7 +6,7 @@ function About({user}) {
       <div className="block">
       <p className="aboutMe">
       <img className="myImage" src={user.basics.image} alt="My profile" />
-        <p className="aboutMe">About Me</p>
+        <span className="aboutMeSmall">About Me</span>
         {user.basics.summary}
         </p>
       </div>
@@ -14,7 +14,7 @@ function About({user}) {
         <h4 className="aboutMeH4 ml-2">Skills</h4>
         <div className="skillsDiv">
           {user.skills.map((skill) => (
-            <li  className="skills" key={skill.name}>{skill.name}</li>
+            <p  className="skills" key={skill.name}>{skill.name}</p>
           ))}
         </div>
       </div>

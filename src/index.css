@@ -73,6 +73,12 @@ code {
 .aboutMe {
   margin-left: 10px;
   color: white;
+  background-color: rgba(255, 255, 255, 0.26);
+  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  border-radius: 8px;
+  padding: 0.5em;
+  margin-top: 1rem;
 }
 .aboutMeH4 {
   font-size: 2rem;
@@ -100,15 +106,20 @@ code {
   clear: left;
   margin-right: 15px;
   margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 .mainSkills {
   margin-top: 6rem;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
 }
 .skillsDiv {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10px;
   margin-top: 2rem;
+  justify-content: center;
 }
 .skills {
   margin-right: 0.75rem;
@@ -150,9 +161,15 @@ code {
 }
 .projectCard{
   background-color: rgba(255, 255, 255, 0.26);
-  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.2);
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   border-radius: 8px;
+}
+.projectCard:hover{
+  background-color:white;
+  color:black;
+  text-shadow: none;
+  cursor: pointer;
 } 
 .projectName{
   padding: 0.8rem 0;
@@ -185,6 +202,7 @@ code {
   margin-left: 15%;
   padding: 8px;
 }
+
 span{
   font-size: 1.2rem;
 }

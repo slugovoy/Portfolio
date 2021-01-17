@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import About from "./About";
 import Education from "./Education";
 import Portfolio from "./Portfolio";
@@ -24,7 +23,6 @@ function Main({ user }) {
       <Route path="/experience">
           <Experience user={user} />
       </Route>
-      {/* <Footer /> */}
       </div>
     </Router>
   );
