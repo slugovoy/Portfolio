@@ -11,7 +11,7 @@ function Main({ user }) {
   return (
     <Router>
     <div>
-      <Navbar />
+      <Navbar user={user}/>
       <Route exact path="/">
         <About user={user} />
       </Route>
@@ -24,7 +24,7 @@ function Main({ user }) {
       <Route path="/experience">
           <Experience user={user} />
       </Route>
-      <Footer />
+      {/* <Footer /> */}
       </div>
     </Router>
   );

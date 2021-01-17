@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Education({user}) {
+  
     return (
         <div className="mainAbout" user={user}>
       <div>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Experience({user}) {
+
     return (
         <div className="mainAbout" user={user}>
         <div>

@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
 import Main from "./pages/Main";
 
 function App() {
@@ -17,7 +15,6 @@ function App() {
   if (!user) {
     return <div />;
   }
-  console.log(user);
   return (
     <div  className="topDiv">
       <Main user={user} />

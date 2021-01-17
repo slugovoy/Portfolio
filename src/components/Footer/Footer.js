@@ -2,12 +2,12 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className=" footer bg-light text-center text-lg-start fixed-bottom">
+    <footer className="footer text-center fixed-bottom">
       <div
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © 2020 Copyright: slugovoy
+        © 2020 Copyright: Sergey Lugovoy
       </div>
     </footer>
   );
