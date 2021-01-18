@@ -12,27 +12,45 @@ function Navbar({ user }) {
   return (
     <div className="sidenav">
       <div className="navbarImageDiv">
-        <img src={NavbarImage} className="navbarImage"alt="navbarImage" />
+        <img src={NavbarImage} className="navbarImage" alt="navbarImage" />
       </div>
       <h5 className="myName">Sergey Lugovoy</h5>
       <p className="myNameP">Full Stack Developer</p>
       <li className="nav-item">
-        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+        <Link
+          to="/"
+          className={location.pathname === "/" ? "nav-link active" : "nav-link"}
+        >
           About
         </Link>
       </li>
       <li className="nav-item mr-1">
-        <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
+        <Link
+          to="/portfolio"
+          className={
+            location.pathname === "/portfolio" ? "nav-link active" : "nav-link"
+          }
+        >
           Portfolio
         </Link>
       </li>
       <li className="nav-item">
-        <Link to="/education" className={location.pathname === "/education" ? "nav-link active" : "nav-link"}>
+        <Link
+          to="/education"
+          className={
+            location.pathname === "/education" ? "nav-link active" : "nav-link"
+          }
+        >
           Education
         </Link>
       </li>
       <li className="nav-item mr-1">
-        <Link to="/experience" className={location.pathname === "/experience" ? "nav-link active" : "nav-link"}>
+        <Link
+          to="/experience"
+          className={
+            location.pathname === "/experience" ? "nav-link active" : "nav-link"
+          }
+        >
           Experience
         </Link>
       </li>
@@ -40,17 +58,30 @@ function Navbar({ user }) {
         <LinkedInIcon
           rel="noreferrer"
           onClick={() => window.open(user.basics.profiles[2].url, "_blank")}
-          style={{ color: '#fff' }}
+          style={{ color: "#fff" }}
           className="icon"
         />
         <GitHubIcon
           rel="noreferrer"
           onClick={() => window.open(user.basics.profiles[1].url, "_blank")}
-          style={{ color: '#fff' }}
+          style={{ color: "#fff" }}
           className="icon"
         />
         <a href="mailto:serg.lugovoy.81@gmail.com" target="_top">
-          <AlternateEmailIcon rel="noreferrer" style={{ color: '#fff' }} className="icon" />
+          <AlternateEmailIcon
+            rel="noreferrer"
+            style={{ color: "#fff" }}
+            className="icon"
+          />
+        </a>
+        <a
+          href={`https://gitconnected.com/${user.basics.username}/resume`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resumeDiv"
+          style={{ color: "#fff" }}
+        >
+        <span className="resumeSpan">Résumé</span>
         </a>
       </div>
       <Footer />

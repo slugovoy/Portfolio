@@ -28,6 +28,11 @@ function Project({ user }) {
                   Github Repository
                 </a>
               </div>
+              <div>
+                <a href={project.website} rel="noreferrer" target="_blank">
+                  Deployed App
+                </a>
+              </div>
             </Grid>
           ))}
         </div>
