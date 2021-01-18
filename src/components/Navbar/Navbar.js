@@ -4,7 +4,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 import NavbarImage from "./image/NavbarImage.jpeg";
-import Footer from "../Footer/Footer"
+import Footer from "../Footer/Footer";
 
 function Navbar({ user }) {
   const location = useLocation();
@@ -17,22 +17,22 @@ function Navbar({ user }) {
       <h5 className="myName">Sergey Lugovoy</h5>
       <p className="myNameP">Full Stack Developer</p>
       <li className="nav-item">
-        <Link to="/" className={`location.pathname === "/"`}>
+        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
           About
         </Link>
       </li>
       <li className="nav-item mr-1">
-        <Link to="/portfolio" className={`location.pathname === "/portfolio"`}>
+        <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
           Portfolio
         </Link>
       </li>
       <li className="nav-item">
-        <Link to="/education" className={`location.pathname === "/education"`}>
+        <Link to="/education" className={location.pathname === "/education" ? "nav-link active" : "nav-link"}>
           Education
         </Link>
       </li>
       <li className="nav-item mr-1">
-        <Link to="/experience" className={`location.pathname === "/experience"`}>
+        <Link to="/experience" className={location.pathname === "/experience" ? "nav-link active" : "nav-link"}>
           Experience
         </Link>
       </li>
