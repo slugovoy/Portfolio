@@ -6,7 +6,7 @@ function Experience({user}) {
     return (
         <div className="mainExperience" user={user}>
         <div>
-          <h2 className="title">Work Experience</h2>
+          <h2 className="title text-white">Work Experience</h2>
           <div className="portfolioCards">
             {user.work.map((work, i) => (
               <Grid item className="projectCard" md={12} key={i}>

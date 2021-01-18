@@ -40,17 +40,17 @@ function Navbar({ user }) {
         <LinkedInIcon
           rel="noreferrer"
           onClick={() => window.open(user.basics.profiles[2].url, "_blank")}
-          color="primary"
+          style={{ color: '#fff' }}
           className="icon"
         />
         <GitHubIcon
           rel="noreferrer"
           onClick={() => window.open(user.basics.profiles[1].url, "_blank")}
-          color="primary"
+          style={{ color: '#fff' }}
           className="icon"
         />
         <a href="mailto:serg.lugovoy.81@gmail.com" target="_top">
-          <AlternateEmailIcon rel="noreferrer" color="primary" className="icon" />
+          <AlternateEmailIcon rel="noreferrer" style={{ color: '#fff' }} className="icon" />
         </a>
       </div>
       <Footer />

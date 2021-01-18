@@ -27,7 +27,7 @@ code {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(107, 207, 107);
+  background-color: rgb(14, 20, 80);
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -68,17 +68,19 @@ code {
   padding: 0px 10px;
   height: 100%;
   padding-bottom: 6rem;
+  
 }
 
 .aboutMe {
   margin-left: 10px;
   color: white;
-  background-color: rgba(255, 255, 255, 0.26);
+  /* background-color: rgba(255, 255, 255, 0.26); */
   box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
-  border-radius: 8px;
+  /* border-radius: 8px; */
   padding: 0.5em;
   margin-top: 1rem;
+  
 }
 .aboutMeH4 {
   font-size: 2rem;
@@ -87,13 +89,13 @@ code {
   color: white;
 }
 .myName {
-  color: black;
+  color: white;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
 }
 .myNameP {
-  color: black;
+  color: white;
   text-align: center;
   font-style: italic;
 }
@@ -160,10 +162,11 @@ code {
   font-weight: 800;
 }
 .projectCard{
-  background-color: rgba(255, 255, 255, 0.26);
-  box-shadow: 7px 7px rgba(0, 0, 0, 0.2);
-  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
   border-radius: 8px;
+  font-weight: 600;
 }
 .projectCard:hover{
   background-color:white;
@@ -195,7 +198,7 @@ code {
 }
 /* Experience component styles */
 .mainExperience{
-  color: white;
+  color: rgb(14, 20, 80);
   height: 100%;
   overflow: auto;
   text-align: center;

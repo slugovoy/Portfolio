@@ -6,12 +6,12 @@ function About({user}) {
       <div className="block">
       <p className="aboutMe">
       <img className="myImage" src={user.basics.image} alt="My profile" />
-        <span className="aboutMeH4">About Me</span><br/>
+        <span className="aboutMeH4" style={{color: 'rgb(14, 20, 80)'}}>About Me</span><br/>
         {user.basics.summary}
         </p>
       </div>
       <div className="mainSkills">
-        <h4 className="aboutMeH4 ml-2">Skills</h4>
+        <h4 className="aboutMeH4 text-center">Skills</h4>
         <div className="skillsDiv">
           {user.skills.map((skill) => (
             <p  className="skills" key={skill.name}>{skill.name}</p>
