@@ -151,7 +151,7 @@ code {
 }
 /* Project component styles */
 .mainProject{
-  color: white;
+  color: rgb(14, 20, 80);
  
   height: 100%;
   overflow: auto;
@@ -189,7 +189,7 @@ code {
 /* Education component styles */
 
 .mainEducation{
-  color: white;
+  color: rgb(14, 20, 80);
   height: 100%;
   overflow: auto;
   text-align: center;

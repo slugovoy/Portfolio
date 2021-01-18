@@ -1,8 +1,14 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import { fadeIn } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 
 function Education({ user }) {
+  const FadeIn = styled.div`
+  animation: 2s ${keyframes`${fadeIn}`};
+`; 
   return (
+    <FadeIn>
     <div className="mainEducation" user={user}>
       <div>
         <h2 className="title">Education</h2>
@@ -25,6 +31,7 @@ function Education({ user }) {
         </div>
       </div>
     </div>
+    </FadeIn>
   );
 }
 

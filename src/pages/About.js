@@ -1,7 +1,13 @@
 import React from "react";
+import { fadeIn } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 
 function About({user}) {
+  const FadeIn = styled.div`
+  animation: 2s ${keyframes`${fadeIn}`};
+`;
   return (
+    <FadeIn>
     <div className="mainAbout">
       <div className="block">
       <p className="aboutMe">
@@ -19,6 +25,7 @@ function About({user}) {
         </div>
       </div>
     </div>
+    </FadeIn>
   );
 }
 

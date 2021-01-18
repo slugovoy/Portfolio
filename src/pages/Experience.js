@@ -1,9 +1,16 @@
 import React from 'react'
 import { Grid } from "@material-ui/core";
+import { fadeIn } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+
 
 function Experience({user}) {
+  const FadeIn = styled.div`
+  animation: 2s ${keyframes`${fadeIn}`};
+`; 
 
     return (
+      <FadeIn>
         <div className="mainExperience" user={user}>
         <div>
           <h2 className="title">Work Experience</h2>
@@ -24,6 +31,7 @@ function Experience({user}) {
           </div>
         </div>
       </div>
+      </FadeIn>
     )
 }
 
