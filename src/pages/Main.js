@@ -6,6 +6,7 @@ import Education from "./Education";
 import Portfolio from "./Portfolio";
 import Experience from "./Experience";
 
+// Main page renders lower level pages with react router
 function Main({ user }) {
   return (
     <Router>

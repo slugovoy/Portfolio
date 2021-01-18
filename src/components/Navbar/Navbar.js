@@ -1,3 +1,4 @@
+// Packages, icons components
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -5,7 +6,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 import NavbarImage from "./image/NavbarImage.jpeg";
 import Footer from "../Footer/Footer";
-
+// Navbar component
 function Navbar({ user }) {
   const location = useLocation();
 

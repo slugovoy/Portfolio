@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import { fadeIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
-
+// Education page renders information from json
 function Education({ user }) {
   const FadeIn = styled.div`
   animation: 2s ${keyframes`${fadeIn}`};

@@ -1,7 +1,7 @@
 import React from "react";
 import { fadeIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
-
+// About page renders information from json
 function About({user}) {
   const FadeIn = styled.div`
   animation: 2s ${keyframes`${fadeIn}`};

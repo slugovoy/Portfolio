@@ -1,6 +1,7 @@
+// Prebuild componentns
 import React from "react";
 import { Grid } from '@material-ui/core';
-
+// Project component
 function Project({ user }) {
   return (
     <div className="mainProject" user={user}>

@@ -1,5 +1,5 @@
 import React from "react";
-
+//  Footer component
 function Footer() {
   return (
     <footer className="footer text-center fixed-bottom">
