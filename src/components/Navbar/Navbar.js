@@ -6,6 +6,13 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 import NavbarImage from "./image/NavbarImage.jpeg";
 import Footer from "../Footer/Footer";
+import WorkIcon from '@material-ui/icons/Work';
+import HomeIcon from '@material-ui/icons/Home';
+import SchoolIcon from '@material-ui/icons/School';
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import GetAppIcon from '@material-ui/icons/GetApp';
+
+
 // Navbar component
 function Navbar({ user }) {
   const location = useLocation();
@@ -21,8 +28,7 @@ function Navbar({ user }) {
         <Link
           to="/"
           className={location.pathname === "/" ? "nav-link active" : "nav-link"}
-        >
-          About
+        ><HomeIcon /><span className="inlineSpan">About</span>
         </Link>
       </li>
       <li className="nav-item mr-1">
@@ -31,8 +37,7 @@ function Navbar({ user }) {
           className={
             location.pathname === "/portfolio" ? "nav-link active" : "nav-link"
           }
-        >
-          Portfolio
+        ><BusinessCenterIcon /><span className="inlineSpan">Portfolio</span>
         </Link>
       </li>
       <li className="nav-item">
@@ -41,18 +46,17 @@ function Navbar({ user }) {
           className={
             location.pathname === "/education" ? "nav-link active" : "nav-link"
           }
-        >
-          Education
+        ><SchoolIcon /><span className="inlineSpan">Education</span>
         </Link>
       </li>
       <li className="nav-item mr-1">
+      
         <Link
           to="/experience"
           className={
             location.pathname === "/experience" ? "nav-link active" : "nav-link"
           }
-        >
-          Experience
+        ><WorkIcon /><span className="inlineSpan">Experience</span>
         </Link>
       </li>
       <div className="materIcons">
@@ -81,7 +85,7 @@ function Navbar({ user }) {
           rel="noopener noreferrer"
           className="resumeDiv"
           style={{ color: "#fff" }}
-        >
+        ><GetAppIcon />
         <span className="resumeSpan">Résumé</span>
         </a>
       </div>

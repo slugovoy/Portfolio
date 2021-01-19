@@ -18,14 +18,14 @@ function Experience({user}) {
             {user.work.map((work, i) => (
               <Grid item className="projectCard" md={12} key={i}>
               <h3 className="projectName">{work.position}</h3>
-                <div>
+                <div className="workInfo">
                   <h5>{work.company}</h5> <span>{work.location}</span>
                   <span> &sdot; </span>
                   <span>
                     {work.start.year} to {work.end.year}
                   </span>
                 </div>
-                <p>{work.summary}</p>
+                <p className="workInfo">{work.summary}</p>
               </Grid>
             ))}
           </div>

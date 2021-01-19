@@ -62,7 +62,32 @@ code {
   text-align: center;
   font-style: italic;
 }
+/* Icons styles */
+.resumeSpan{
+  font-size: 12px;
+}
+.materIcons {
+  position: absolute;
+  bottom: 15vh;
+  left: 7%;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* .resumeDiv{
+  margin: auto;
+  text-align: center;
+  padding: 0.5rem;
+} */
 
+.icon {
+  margin-right: 8px;
+}
+.refer {
+  font-size: 1.5rem;
+}
+/* Media query */
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -71,20 +96,20 @@ code {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1075px) {
   .sidenav {
     padding-top: 15px;
     
   }
   .myName{
-    font-size: 15px;
+    font-size: 12px;
   }
   .myNameP{
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .nav-item {
-    font-size: 15px;
+    font-size: 18px;
     padding: 1px;
     
   }
@@ -93,6 +118,22 @@ code {
   }
   .resumeSpan{
     font-size: 16px;
+  }
+  .inlineSpan{
+    font-size: 12px;
+  }
+  .resumeSpan{
+    display: none;
+  }
+  .materIcons{
+    left: 36%;
+    right: 45%;
+  }
+  .icon{
+    margin-bottom: 5px;
+  }
+  .footerText{
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -103,8 +144,8 @@ code {
   .nav-item {
     font-size: 12px;
   }
-.navbarImage{
-
+.inlineSpan{
+  display: none;
 }
 
   
@@ -175,29 +216,7 @@ code {
   font-weight: 700;
   font-size: 1.4rem;
 }
-.materIcons {
-  position: absolute;
-  bottom: 15vh;
-  left: 7%;
-  justify-content: space-between;
-  cursor: pointer;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.resumeDiv{
-  margin: auto;
-  text-align: center;
-  padding: 0.5rem;
-}
-.resumeSpan{
-  
-}
-.icon {
-  margin-right: 8px;
-}
-.refer {
-  font-size: 1.5rem;
-}
+
 /* Project component styles */
 .mainProject{
   color: rgb(14, 20, 80);
@@ -254,8 +273,11 @@ code {
   margin-left: 15%;
   padding: 8px;
 }
-
-span{
+.inlineSpan{
+  padding-left: 5px;
+    padding-right: 5px;
+}
+.workInfo{
   font-size: 1.2rem;
 }
 /* Footer styles */
