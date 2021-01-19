@@ -96,7 +96,7 @@ code {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1076px) {
   .sidenav {
     padding-top: 15px;
     
@@ -116,9 +116,7 @@ code {
   .navbarImage{
     display: none;
   }
-  .resumeSpan{
-    font-size: 16px;
-  }
+  
   .inlineSpan{
     font-size: 12px;
   }
@@ -136,17 +134,48 @@ code {
     font-size: 8px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 586px) {
   .sidenav {
     padding-top: 15px;
     
   }
-  .nav-item {
+  .myName{
     font-size: 12px;
   }
-.inlineSpan{
-  display: none;
-}
+  .myNameP{
+    font-size: 11px;
+  }
+
+  .nav-item {
+    padding-left: 2.7%;
+    
+  }
+  .navbarImage{
+    display: none;
+  }
+  .resumeSpan{
+    font-size: 16px;
+  }
+  .inlineSpan{
+    display: none;
+  }
+  .resumeSpan{
+    display: none;
+  }
+  .materIcons{
+    left: 36%;
+    right: 45%;
+  }
+  .icon{
+    margin-bottom: 5px;
+  }
+  .footerText{
+    font-size: 8px;
+  }
+  .materIcons{
+    left: 22%;
+    right: 45%;
+  }
 
   
 }
